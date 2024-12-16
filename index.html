@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <ul class="navbar-menu">
+                <li><a href="#top-bar">Home</a></li>
+                <li><a href="#experience-area">Experience</a></li>
+                <li><a href="#resume-area">Resume</a></li>
+                <li><a href="#about-area">About</a></li>
+                <li><a href="#contact-area">Contact</a></li>
+                
+                
+    
+            </ul>
+        </div>
+    </nav>
+
+    <section class="top-banner flexible-container" id="top-bar">
+        <div class="half-width">
+            <h1>Welcome To</h1>
+            <h1> <span class="orange-color">Comilla Riders</span> World!</h1>
+
+            <h3 style="color: 	#FF6347;">Build strong mindset and set up your Destination.</h3>
+            <p>Our group is made up of beautiful and neat people. 
+                Everyone here is very intelligent and hardworking. 
+                This group is made up of <span style="color: rgb(245, 7, 7);">network engineers, mechanical engineers, lawyers, and web developers</span>.  Everyone in this group is very careful 
+                about their work. We are all coming to Japan to do our master's degree. 
+                One by one, we will do master's in one subject. We have chosen the subject 
+                of master's according to the type of job of each of us. Above all, each of 
+                us is always ready to develop our talent.
+            </p><br>
+            <a class="link-button" href="https://www.linkedin.com/in/abdullah-al-fahad-680908210/" target="_blank">Hire
+                Me</a>
+
+        </div>
+
+        <div class="half-width">
+            <img src="images/logo.jpg" alt="Logo" style="width: 90%; height: 70%;">
+        </div>
+    </section>
+
+ <!-- end Navbar -->
+
+<!-- image slider -->
+
+ <section class="image-slider">
+    <div class="slider-container">
+        <div class="slide">
+            <img src="images/image1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="images/image2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="images/image4.jpg" alt="Image 4">
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    // Function to show the next slide
+    function showNextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+    }
+
+    // Function to show the previous slide
+    function showPrevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
+    }
+
+    // Function to update the slider position
+    function updateSlider() {
+        const sliderContainer = document.querySelector('.slider-container');
+        sliderContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    // Set up the interval for automatic slide change (optional)
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+
+    // Add event listeners to buttons (if you have prev/next buttons)
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    if (prevButton) prevButton.addEventListener('click', showPrevSlide);
+    if (nextButton) nextButton.addEventListener('click', showNextSlide);
+</script>
+
+<!--End image slider -->
+
+
+    <!-- dream-banner -->
+    <section class="dream-banner flexible-container">
+        <div class="half-width">
+            <img src="images/profile.png.jpg" width="200px" height="350px">
+        </div>
+        <div class="half-width">
+            <br><br><br>
+            <h3>Network Engineer</h3>
+            <p><i>Fahad a dedicated As a network engineer, i am a diverse skill set tailored to designing, implementing, 
+                and maintaining complex network infrastructures. My expertise includes proficiency in networking protocols, 
+                hardware configurations, security measures, and troubleshooting techniques. i'm accustomed to working 
+                with various networking technologies such as routers, switches, firewalls, and VPNs to ensure seamless 
+                connectivity and optimal performance across an organization's network.</i></p><br>
+            <a class="link-button" href="https://drive.google.com/file/d/1nHamrTN7hOPomQMh5BGJVntTmwA6rQeu/view?usp=sharing"
+                target="_blank">Resume
+                Download</a>
+        </div>
+    </section>
+
+
+
+<!-- resume-area -->
+
+  
+  <section class="resume-area" id="resume-area">
+      <h1>Resume Area</h1>
+      <div class="flexible-container">
+          <!-- Resume Item 1 -->
+          <div class="resume-card">
+              <img src="images/kayes.jpg" alt="Mechanical Engineer" class="experience-image">
+              <div class="resume-content">
+                  <h3><span class="orange-color">Mechanical Engineer</span></h3>
+                  <a href="https://drive.google.com/file/d/1ByjGI-yy5NChNYfOM0HF5rtYgIlxoOp5/view?usp=sharing" 
+                     target="_blank" 
+                     class="view-profile-button">View Profile</a>
+              </div>
+          </div>
+  
+          <!-- Resume Item 2 -->
+          <div class="resume-card">
+              <img src="images/ishtiak.jpg" alt="Network Engineer" class="experience-image">
+              <div class="resume-content">
+                  <h3><span class="orange-color">Web Developer</span></h3>
+                  <a href="https://drive.google.com/file/d/1BsV5-5IXf3vv6unHJ94fTOSVqGouGLh4/view?usp=sharing" 
+                     target="_blank" 
+                     class="view-profile-button">View Profile</a>
+              </div>
+          </div>
+  
+          <!-- Resume Item 3 -->
+          <div class="resume-card">
+              <img src="images/shipon.jpg" alt="Lawyer" class="experience-image">
+              <div class="resume-content">
+                  <h3><span class="orange-color">Lawyer</span></h3>
+                  <a href="https://drive.google.com/file/d/10bInuEZfIfzdGAtAJJHMif4pKsI7DD0h/view?usp=sharing" 
+                     target="_blank" 
+                     class="view-profile-button">View Profile</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+
+
+
+<!-- experience-area -->
+
+
+ 
+  <section class="experience-area" id="experience-area">
+    <h1><b><u>Experience</u></b></h1>
+    
+    <div class="flexible-container">
+        <div class="experience-item">
+            <h2>Md Kayes Mahmud</h2>
+            <h2>Mechanical Engineer</h2>
+            <p><i> Hello! I’m a dedicated and innovative Mechanical Engineer with a passion for 
+                designing, analyzing, and improving mechanical systems. With a strong foundation
+                 in mechanical design, thermodynamics, and materials science, I specialize in 
+                 creating efficient and reliable solutions that meet technical and operational 
+                 requirements
+                Let’s work together to engineer solutions that make a difference! </i>🔧🌟</p>
+        </div>
+
+        
+            <div class="experience-item">
+                <h2>Ishtiak Ahamad</h2>
+                <h2>Web Developer</h2>
+                <p><i> Hello! I’m a passionate and dedicated Web Developer with a strong focus on creating 
+                    dynamic, user-friendly, and innovative web solutions. With a deep understanding of 
+                    both frontend and backend technologies, I specialize in crafting responsive and 
+                    aesthetically pleasing websites that deliver seamless user experiences. </i>
+                    🚀</p>
+            </div>
+
+
+            
+                <div class="experience-item">
+                    <h2>MD. SAHAB UDDIN MAJUMDER</h2>
+                    <h2>Lawyer</h2>
+                    <p><i>I can definitely describe myself as a lawyer! 
+                        I am always striving to learn more about the 
+                        law and to be the best advocate for my clients. 
+                        I am passionate about justice and making sure 
+                        that everyone has access to quality legal representation.
+                         I am also a strong communicator and negotiator, which are
+                          essential skills for any lawyer.                        
+                        Let’s build something amazing together! </i>🚀</p>
+                </div>
+
+
+                
+                    <div class="experience-item">
+                        <h2>Abdullal Al Fahad</h2>
+                        <h2>Network Engineer</h2>
+                        <p><i>Support to Infrastructure Engineer for
+                            Configuration and troubleshooting related
+                            issue. Daily basis monitoring and report of
+                            Network status. Design and deploy
+                            functional networks (LAN, WLAN,
+                            WAN). I also Configure and install
+                            software, servers, routers, Switches and
+                            other network devices. Also maintain
+                            complete technical documentation.
+                            Coordinates with Customer. Managing a
+                            team. </i>🚀</p>
+                    </div>
+            
+          
+    </div>
+</section>
+
+
+<!--end experience-area -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+<!-- About-area -->
+  
+  <section class="about-area" id="about-area">
+      <h1><b><u>About</u></b></h1>
+      <h2>The Kyoto College of Graduate Studies for Informatics (KCGI)</h2>
+      <div class="flexible-container">
+          <div class="experience-item">
+              <h2>KCGI Map</h2>
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6534.08316136331!2d135.77673407441608!3d35.030689665437926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001085a40096db1%3A0x8c895182522ac6d1!2sThe%20Kyoto%20College%20of%20Graduate%20Studies%20for%20Informatics!5e0!3m2!1sen!2sjp!4v1734145478205!5m2!1sen!2sjp" 
+                  width="480" 
+                  height="330" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+  
+          <div class="experience-item">
+              <h2 style="color:#5F9EA0;">See this video</h2>
+              <iframe width="460" height="215" src="https://www.youtube.com/embed/Z-pT0XDYvDM?si=hDB91lHkKZhzu7-1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      </div>
+  </section>
+  
+  <div style="background-color: #f9f9f9; padding: 20px; border: 2px solid #FF6347; border-radius: 10px; text-align: center;">
+    <p style="color: #FF6347; font-size: 18px; font-weight: bold;">
+        <u>Please listen to the national song of Bangladesh.</u>
+    </p>
+    <audio controls autoplay>
+        <source src="images/national.mp3.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+<div id="contact-area"style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; border: 2px solid #FF6347; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+    <h3 style="text-align: center; color: #FF6347;">Contact Us</h3>
+    <form action="#" method="post">
+        <label for="name" style="font-weight: bold; color: #333;">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required style="width: 100%; padding: 8px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+        
+        <label for="email" style="font-weight: bold; color: #333;">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 8px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+        
+        <label for="mobile" style="font-weight: bold; color: #333;">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required style="width: 100%; padding: 8px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+        
+        <label for="description" style="font-weight: bold; color: #333;">Description:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Write your message here..." required style="width: 100%; padding: 8px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+        
+        <button type="submit" style="width: 100%; padding: 10px; background-color: #FF6347; color: #fff; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+            Send
+        </button>
+    </form>
+</div>
+
+
+
+  
+
+    
+
+   
+    
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2024 Abdullah Al Fahad. All rights reserved.</p>
+        <p><a href="https://www.linkedin.com/in/abdullah-al-fahad-680908210/" target="_blank">LinkedIn</a></p>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>
